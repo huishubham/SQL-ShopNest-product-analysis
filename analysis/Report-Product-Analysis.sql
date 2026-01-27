@@ -3,7 +3,6 @@
 ShopNest Website Analytics Project:
 For ShopNest, a hypothetical e-commerce app, I used SQL Server to analyze user funnels, retention, conversion, and A/B test performance. I identified major 
 drop-offs in the funnel, measured conversion by device, analyzed cohort retention, and validated that a simplified checkout flow improved conversion. 
-Based on this, I recommended UX and checkout optimizations.
 ===================================================================================================================================================================*/
 
 
@@ -161,3 +160,4 @@ WITH funnel AS (
 SELECT
 1 - (SUM(purchase) * 1.0 / SUM(app_open)) AS overall_dropoff_rate
 FROM funnel;
+
